@@ -9,7 +9,7 @@ class Base:
     def setup(self):
         # Mac上，命令行运行 browser=chrome pytest test_*.py
         browser = os.getenv("browser")
-        print(browser)
+        # print(browser)
         if browser == "firefox":
             self.driver = webdriver.Firefox()
         elif browser == "headless":
